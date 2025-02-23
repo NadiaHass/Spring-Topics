@@ -1,0 +1,9 @@
+INDEX VERSION 1.134+C:\Users\ELITEBOOK\Documents\Fullstack Angular Springboot\Springboot course\spring-core\.metadata\.plugins\org.eclipse.jdt.core
+1376945089.index
+3413270776.index
+1310045271.index
+2404380776.index
+3461874578.index
+2979824320.index
+2172614345.index
+3829212362.index
