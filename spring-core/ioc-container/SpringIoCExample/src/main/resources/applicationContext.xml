@@ -5,7 +5,8 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
            http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="greetingService" class="com.nadia.spring.ioc.GreetingService">
-        <property name="message" value="Hello, Spring XML Configuration!"/>
-    </bean>
+<bean id="greetingService" class="com.nadia.spring.ioc.GreetingService">
+	<property name="message" value="Hello message from XML configuration !"/>
+</bean>
+
 </beans>

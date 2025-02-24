@@ -1,13 +1,14 @@
 package com.nadia.spring.ioc;
 
 public class GreetingService {
-    private String message;
+	private String message;
 
-    public void setMessage(String message) {
-        this.message = message;
-    }
+	public String getMessage() {
+		System.out.println("Message: " + message);
+		return message;
+	}
 
-    public void getMessage() {
-        System.out.println("Message: " + message);
-    }
+	public void setMessage(String message) {
+		this.message = message;
+	}
 }
