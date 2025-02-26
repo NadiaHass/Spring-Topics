@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="employee1" class="com.nadia.spring.di.Employee">
+	<constructor-arg type="int" value="36"></constructor-arg>
+</bean>
+
+<bean id="employee2" class="com.nadia.spring.di.Employee">
+	<constructor-arg type="String" value="Nadia"></constructor-arg>
+</bean>
+
+</beans>
