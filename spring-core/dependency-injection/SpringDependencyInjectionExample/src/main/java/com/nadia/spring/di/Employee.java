@@ -3,6 +3,7 @@ package com.nadia.spring.di;
 public class Employee {
 	private int id;
 	private String name;
+	private Address address;
 	
 	public Employee(int id) {
 		System.out.println("Employee(int id) constructor is called");
@@ -20,6 +21,14 @@ public class Employee {
 		this.name = name;
 	}
 
+	
+	public Employee(int id, String name, Address address) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.address = address;
+	}
+
 	public int getId() {
 		return id;
 	}
@@ -34,7 +43,6 @@ public class Employee {
 	}
 	
 	public void displayEmployeeDetails() {
-		System.out.println("Employee { id = " + id + ", name = " + name + "}");
+		System.out.println("Employee { id = " + id + ", name = " + name + ", address= " + address + "}");
 	}
-	
 }

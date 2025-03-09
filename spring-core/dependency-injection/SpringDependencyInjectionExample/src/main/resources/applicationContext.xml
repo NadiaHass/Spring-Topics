@@ -12,4 +12,19 @@
 	<constructor-arg type="String" value="Nadia"></constructor-arg>
 </bean>
 
+
+<bean id="address" class="com.nadia.spring.di.Address">
+	<constructor-arg value="Montreuil"></constructor-arg>
+	<constructor-arg value="Paris"></constructor-arg>
+	<constructor-arg value="France"></constructor-arg>
+
+</bean>
+
+<bean id="employee3" class="com.nadia.spring.di.Employee">
+	<constructor-arg type="int" value="21"></constructor-arg>
+	<constructor-arg type="String" value="Nadia"></constructor-arg>
+	<constructor-arg>
+		<ref bean="address"/>
+	</constructor-arg>
+</bean>
 </beans>
