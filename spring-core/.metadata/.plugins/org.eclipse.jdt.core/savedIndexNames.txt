@@ -1,5 +1,4 @@
 INDEX VERSION 1.134+C:\Users\ELITEBOOK\Documents\Fullstack Angular Springboot\Springboot course\spring-core\.metadata\.plugins\org.eclipse.jdt.core
-1573478390.index
 2243643625.index
 2979824320.index
 2281147684.index

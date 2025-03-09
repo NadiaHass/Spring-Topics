@@ -1,22 +1,30 @@
 package com.nadia.spring.di;
 
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class ContructorDependencyInjection {
 	public static void main(String[] args) {
-		ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+		ApplicationContext contextXml = new ClassPathXmlApplicationContext("applicationContext.xml");
 		
-//		Using xml configuration
-		Employee employee1 = context.getBean("employee1" , Employee.class);
+//		Using XML-based Configuration
+		Employee employee1 = contextXml.getBean("employee1" , Employee.class);
 		employee1.displayEmployeeDetails();
 		
-		Employee employee2 = context.getBean("employee2" , Employee.class);
+		Employee employee2 = contextXml.getBean("employee2" , Employee.class);
 		employee2.displayEmployeeDetails();
 		
-		Employee employee3 = context.getBean("employee3" , Employee.class);
+		Employee employee3 = contextXml.getBean("employee3" , Employee.class);
 		employee3.displayEmployeeDetails();
 
-//		using 
+		
+//		Using Java-based Configuration
+        ApplicationContext contextJava = new AnnotationConfigApplicationContext(Config.class);
+
+        Employee employee = contextJava.getBean(Employee.class);
+        employee.displayEmployeeDetails();
+
+		
 	}
 }

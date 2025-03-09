@@ -1,10 +1,20 @@
 package com.nadia.spring.di;
 
+// if we use component here Spring will automatically detect beans 
+// without manually defining them in a @Configuration class
+
+// @Component
+
 public class Address {
 	private String city;
 	private String state;
 	private String country;
 	
+//	and we initialize the attributes here
+//    private String city = "Montreuil";
+//    private String state = "Paris";
+//    private String country = "France";
+
 	public Address(String city, String state, String country) {
 		this.city = city;
 		this.state = state;

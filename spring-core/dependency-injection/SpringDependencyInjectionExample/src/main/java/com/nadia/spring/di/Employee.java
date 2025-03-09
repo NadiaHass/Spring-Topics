@@ -1,10 +1,22 @@
 package com.nadia.spring.di;
 
+// @Component
+
 public class Employee {
 	private int id;
 	private String name;
 	private Address address;
 	
+//	same here with using autowired
+//    private final int id = 21;
+//    private final String name = "Nadia";
+//    private final Address address;
+//
+//    @Autowired  // Constructor Injection
+//    public Employee(Address address) {
+//        this.address = address;
+//    }
+
 	public Employee(int id) {
 		System.out.println("Employee(int id) constructor is called");
 		this.id = id;
